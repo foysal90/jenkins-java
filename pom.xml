@@ -79,7 +79,7 @@
 <!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
 <!--                        <browser>${Browser}</browser>-->
 <!--                    </systemPropertyVariables>-->
-<!--                </configuration>-->
+               </configuration>
             </plugin>
 
         </plugins>
