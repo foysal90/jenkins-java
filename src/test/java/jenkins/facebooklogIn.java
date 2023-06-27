@@ -10,18 +10,19 @@ import org.testng.annotations.Test;
 public class facebooklogIn {
 
     public static WebDriver driver;
-@Parameters("Browser")
+//@Parameters("Browser")
     @Test
-    public  void fbLogin(String browserName){
+//    public  void fbLogin(String browserName){
+        public  void fbLogin(){
 
-    if (browserName.contains("Chrome")){
-        driver = new ChromeDriver();
-    }
-    else{
-        driver = new SafariDriver();
-    }
+//    if (browserName.contains("Chrome")){
+//        driver = new ChromeDriver();
+//    }
+//    else{
+//        driver = new SafariDriver();
+//    }
 
-
+       driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.facebook.com/");
         driver.findElement(By.xpath("//input[@id='email']")).sendKeys("foy21");
